@@ -1,0 +1,884 @@
+body
+{
+    margin: 0;
+}
+
+#bloc
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* POLICE */ 
+
+@font-face 
+{
+    font-family: 'metropolisbold';
+    src: url('metropolis-bold-webfont.woff2') format('woff2'),
+         url('metropolis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'metropolisextra_light';
+    src: url('metropolis-extralight-webfont.woff2') format('woff2'),
+         url('metropolis-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'flow_extregular';
+    src: url('flow-webfont.woff2') format('woff2'),
+         url('flow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'flow_extbold';
+    src: url('flow_b-webfont.woff2') format('woff2'),
+         url('flow_b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'devonshireregular';
+    src: url('devonshire-regular-webfont.woff2') format('woff2'),
+         url('devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'croissant_oneregular';
+    src: url('croissantone-regular-webfont.woff2') format('woff2'),
+         url('croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'superclarendonregular';
+    src: url('superclarendon_regular-webfont.woff2') format('woff2'),
+         url('superclarendon_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'rujis_handwriting_font_v.2.Md';
+    src: url('rujishandwritingfontv.2.0-webfont.woff2') format('woff2'),
+         url('rujishandwritingfontv.2.0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face 
+{
+    font-family: 'dancing_scriptregular';
+    src: url('dancing_script-webfont.woff2') format('woff2'),
+         url('dancing_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'arabic-font-2013bold';
+    src: url('arabic-font-2013-webfont.woff2') format('woff2'),
+         url('arabic-font-2013-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'pt_serifregular';
+    src: url('ptf55f-webfont.woff2') format('woff2'),
+         url('ptf55f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'typo_comics_light_demoregular';
+    src: url('typo_comics_light_demo-webfont.woff2') format('woff2'),
+         url('typo_comics_light_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+    font-family: 'metropolisbold', 'Arial', serif;
+    font-size: 3em;
+}
+
+aside, footer
+{
+    font-family: 'metropolisextra_light', 'arial', serif;
+}
+
+section:nth-child(1) h3
+{
+    font-family: 'flow_extbold', Arial, serif;
+    font-size: 2.5em;
+}
+
+section i
+{
+    font-size: 2.5em;
+}
+
+section:nth-child(1) h2, #carte_menu_un h3
+{
+    font-family: 'devonshireregular', Arial, serif;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+section:nth-child(2) h2
+{
+    font-family: 'croissant_oneregular', Arial, serif;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+section:nth-child(2) h3
+{
+    font-family: 'superclarendonregular';
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+section a
+{
+    text-decoration: none;
+}
+
+section:nth-child(3) h3, section:nth-child(4) h3
+{
+    font-family: 'rujis_handwriting_font_v.2.Md', Arial, serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+section:nth-child(3) h2
+{
+    font-family: 'dancing_scriptregular', Arial, serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+section:nth-child(4) h2
+{
+    font-family: 'kaushan_scriptregular', Arial, serif;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+#arabicfont
+{
+    font-family: 'arabic-font-2013bold';
+    font-size: 2.5em;
+    color: rgb(53, 53, 53);
+}
+
+
+
+/* POLICE */
+
+/* COLOR */ 
+
+header, footer, footer a
+{
+    color: rgb(253, 203, 70);
+    background-color: rgb(87, 156, 135);
+}
+
+.restaurant, #carte_menu_un, .menu_carte
+{
+    box-shadow: 0 0 10px rgb(160, 159, 159);
+}
+
+.restaurant:nth-child(1)
+{
+    background-color: rgb(252, 223, 219);
+    color: rgb(60, 18, 24);
+}
+
+.restaurant:nth-child(2)
+{
+    background-color: rgb(255, 245, 254);
+}
+
+.restaurant:nth-child(2) h4
+{
+    color: rgb(199, 116, 18);
+}
+
+.restaurant:nth-child(3)
+{
+    background-color: rgb(249, 249 ,249);
+}
+
+.restaurant:nth-child(3) h4
+{
+    color: rgb(8, 135, 251);
+}
+
+.restaurant:nth-child(4)
+{
+    background-color: rgb(253, 255 ,253);
+}
+
+.restaurant:nth-child(4) h4
+{
+    color: rgb(114, 191, 86);
+}
+
+#menu_un h2, #menu_un h3
+{
+    color: rgb(60, 18, 24);
+}
+
+#menu_deux h3
+{
+    color: rgb(199, 116, 18);
+}
+
+#menu_trois h3
+{
+    color: rgb(8, 135, 251);
+}
+
+#menu_quatre h3
+{
+    color: rgb(114, 191, 86);
+}
+
+/* COLOR */
+
+/* HEADER */
+
+header
+{
+    text-align: center;
+}
+
+/* HEADER */
+
+/* SECTION */
+
+#bloc_restaurant
+{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.restaurant
+{
+    width: 400px;
+    height: 500px;
+    margin: 5%;
+    text-align: center;
+}
+
+.middle
+{
+    margin-top: 50%;
+}
+
+.restaurant i
+{
+    margin-top: 40%;
+}
+
+
+#menu_un i
+{
+    background: linear-gradient(to right, rgb(240, 74, 94), rgb(248, 161, 131));
+    color:transparent;
+    -webkit-background-clip: text;
+    font-size: 3.5em;
+}
+
+#menu_deux h2
+{
+    background: linear-gradient(to right, rgb(216, 133, 46), rgb(144, 91, 253));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#menu_trois h2
+{
+    background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#menu_quatre h2
+{
+    background: linear-gradient(to right, rgb(66, 151, 60), rgb(191, 255, 126));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.zoom
+{
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+
+.zoom:hover
+{
+    transform: scale(1.15);
+}
+
+/* SECTION */
+
+/* ASIDE */
+
+aside h4
+{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(253, 203, 70);
+    /*width: 15%;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    /*background-color: rgb(87, 156, 135);
+    border-radius: 10px;
+    padding: 5px 10px;*/
+}
+
+#prochainement
+{
+    background-color: rgb(87, 156, 135);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+aside
+{
+    padding-bottom: 100px;
+}
+
+
+/* ASIDE */
+
+/* FOOTER */
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer a
+{
+    text-decoration: none;    
+}
+
+footer h2
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+footer h2:hover
+{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake 
+{
+    0% {transform:translate(1px, 1px) rotate(0deg);}
+    10% {transform:translate(-1px, -2px) rotate(-1deg);}
+    20% {transform:translate(-3px, 0px) rotate(1deg);}
+    30% {transform:translate(3px, 2px) rotate(0deg);}
+    40% {transform:translate(1px, -1px) rotate(1deg);}
+    50% {transform:translate(-1px, 2px) rotate(-1deg);}
+    60% {transform:translate(-3px, 1px) rotate(0deg);}
+    70% {transform:translate(3px, 1px) rotate(-1deg);}
+    80% {transform:translate(-1px, -1px) rotate(1deg);}
+    90% {transform:translate(1px, 2px) rotate(0deg);}
+    100% {transform:translate(1px, -2px) rotate(-1deg);}
+}
+
+
+/* FOOTER */
+
+/* MENU UN */
+
+header h1
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.menu_section h2
+{
+    text-align: center;
+}
+
+.menu_carte
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+#menu_carte_un
+{
+    background-color: rgb(252, 223, 219);
+}
+
+.menu_carte i:nth-child(1)
+{
+    margin-top: 3%;
+    font-size: 3.5em;
+}
+
+.menu_carte h3
+{
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    font-weight: normal;
+    color: rgb(61, 19, 25);
+}
+
+.trait
+{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.menu_carte h4
+{
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(61, 19, 25);
+    font-family: 'flow_extbold', arial, serif;
+}
+
+.menu_carte ul
+{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1.2em;
+    font-family: 'flow_extbold', Arial, serif;
+    padding-left: 0;
+}
+
+.menu_carte li
+{
+    margin: 10px 0px;
+    color: rgb(61, 19, 25);
+}
+
+.menu_carte i:nth-child(9)
+{
+    color: rgb(61, 19, 25);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#fontsdevon
+{
+    font-family: 'devonshireregular', Arial, serif;
+    font-weight: normal;
+}
+
+.menu_carte h4, .menu_carte h3, .menu_carte i
+{
+    text-align: center;
+    width: 100%;
+}
+
+
+#menu_carte_un i
+{
+    background: linear-gradient(to right, rgb(240, 74, 94), rgb(248, 161, 131));
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
+.menu_carte h4
+{
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+
+.menu_carte h4:hover
+{
+    transform: scaleX(1);
+    text-decoration: underline; 
+}
+
+/* MENU DEUX */
+
+#croissant_oneregular
+{
+    font-family: 'croissant_oneregular', Arial, serif;
+    background: linear-gradient(to right, rgb(216, 133, 46), rgb(144, 91, 253));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 
+}
+
+#menu_carte_deux
+{
+    background-color: rgb(255, 245, 254);
+    padding-bottom: 50px;
+}
+
+#menu_carte_deux .orange
+{
+    color: rgb(198, 116, 18);
+}
+
+#menu_carte_deux .rose
+{
+    color: rgb(165, 103, 153);
+}
+
+#menu_carte_deux .violet
+{
+    color: rgb(110, 76, 204);
+}
+
+#menu_carte_deux h4, #menu_carte_deux li
+{
+    font-family: 'pt_serifregular', arial, serif;
+}
+
+
+/* MENU TROIS */
+
+#menu_carte_trois h3
+{
+    font-family: 'dancing_scriptregular', Arial, serif;
+    background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#menu_carte_trois h4, #menu_carte_trois li
+{
+    font-family: 'typo_comics_light_demoregular', Arial, serif;
+    font-weight: normal;
+}
+
+#menu_carte_trois
+{
+    background-color: rgb(237, 239, 239);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* MENU QUATRE */
+
+#menu_carte_quatre h3
+{
+    font-family: 'kaushan_scriptregular', Arial, serif;
+    background: linear-gradient(to right, rgb(66, 151, 60), rgb(191, 255, 126));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 
+}
+
+#menu_carte_quatre
+{
+    background-color: rgb(253, 255, 253);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#menu_carte_quatre h4, #menu_carte_quatre li
+{
+    font-family: 'typo_comics_light_demoregular', Arial, serif;
+    font-weight: normal;
+    color: black;
+}
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 1252px)
+{
+    #bloc_restaurant
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1134px)
+{
+    #menu_carte_deux h4
+    {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    
+    .trait:nth-child(2), .trait:nth-child(4), .trait:nth-child(6) 
+    {
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .restaurant
+    {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:996px)
+{
+    #menu_carte_quatre .trait
+    {
+        flex-direction: column;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:906px)
+{
+    #menu_carte_trois .trait
+    {
+        flex-direction: column;
+        width: 70%;
+    }
+}
+@media screen and (max-width:884px)
+{
+    .trait
+    {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width:878px)
+{
+    .trait:nth-child(2), .trait:nth-child(4), .trait:nth-child(6)
+    {
+        flex-direction: column;
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:875px)
+{
+    .restaurant
+    {
+        width: 300px;
+        height: 400px;
+    }
+    
+    #menu_trois, #menu_un, #menu_deux, #menu_quatre
+    {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (min-width:769px)
+{
+    .prix
+    {
+        float: right;
+    }
+    
+    .prix br
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    #bloc_restaurant
+    {
+        width: 95%; 
+    }
+    
+    .menu_carte ul
+    {
+        text-align: center;
+        width: 100%
+    }
+    
+    #arabicfont
+    {
+        font-size: 2em;
+    }
+    
+    #menu_carte_un h3
+    {
+        font-size: 2em;
+    }
+    
+    .menu_carte h4
+    {
+        font-size: 1.8em;
+    }
+    
+    .trait
+    {
+        flex-direction: column;
+    }
+    
+    #menu_carte_deux h4
+    {
+        font-size: 1.3em
+    }
+    
+    #menu_carte_deux h3
+    {
+        font-size: 2.4em
+    }
+}
+
+@media screen and (max-width:545px)
+{
+    #menu_carte_deux h3
+    {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:425px)
+{
+    aside h4
+    {
+        font-size: 1.7em;
+    }
+    
+    #prochainement
+    {
+        width: 270px;
+    }
+    
+    footer
+    {
+        font-size: 0.9em;
+    }
+    
+    #menu_carte_deux h3
+    {
+        font-size: 1.8em;
+    }
+    
+    #menu_carte_deux li
+    {
+        font-size: 0.8em
+    }
+    
+    #menu_carte_deux
+    {
+        padding-top: 20px;
+    }
+    
+    #menu_carte_trois h4
+    {
+        font-size: 1.5em;
+    }
+    
+    #menu_carte_quatre h3
+    {
+        font-size: 2.2em;
+    }
+    
+    #menu_carte_quatre h4
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:375px)
+{
+    #menu_un, #menu_deux, #menu_trois, #menu_quatre
+    {
+        font-size: 0.8em;
+    }
+    
+    aside h4
+    {
+        font-size: 1.4em;
+    }
+    
+    #prochainement
+    {
+        width: 250px;
+    }
+    
+    footer
+    {
+        font-size: 0.7em;
+    }
+    
+    #menu_carte_un h3
+    {
+        font-size: 1.5em;
+    }
+    
+    #menu_carte_deux h3
+    {
+        font-size: 1.5em;
+    }
+    
+    #menu_carte_trois h3
+    {
+        font-size: 2.1em;
+    }
+}
+
