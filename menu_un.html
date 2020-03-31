@@ -11,18 +11,24 @@
 <body>
    
     <header>
-        <h1>ohmyfood</h1>
+        <a href="index.html"><h1>ohmyfood</h1></a>
     </header>
     
     <section class="menu_section">
         <h2 id="arabicfont">La note enchantée</h2>
         <div id="menu_carte_un" class="menu_carte">
-            <i class="fas fa-music"></i>
+            <div class="note"><i id="note_un" class="fas fa-music"></i></div>
             <h3>La note enchantée</h3>
+            
+            <div id="test">
             <div class="trait">
-            <img class="trait_un" src="menu_un_trait(1).png" alt="trait"/><h4>Prélude</h4>
+            <img class="trait_un" src="menu_un_trait(1).png" alt="trait"/><div class="categorie"><h4>Prélude</h4>
+            <div id="underline_un" class="underline"></div>
+            </div>
             <img class="trait_deux" src="menu_un_trait(2).png" alt="trait"/>
             </div>
+            </div>
+            
             <ul>
                 <li>Ravioles de foie gras accompagnés de leur crème à la truffe <span class="prix"><br/>98€</span></li>
                 <li>Caviar osciètre sur blini à la farine de blé noir <span class="prix"><br/>115€</span></li>
@@ -32,7 +38,9 @@
             
             <div class="trait">
             <img class="trait_trois" src="menu_un_trait(3).png" alt="trait"/>
-            <h4>Point d'orgue</h4>
+            <div class="categorie"><h4>Point d'orgue</h4>
+            <div id="underline_un" class="underline"></div>
+            </div>
             <img class="trait_quatre" src="menu_un_trait(4).png" alt="trait"/>
             </div>
             <ul>
@@ -43,7 +51,9 @@
             
             <div class="trait">
             <img class="trait_cinq" src="menu_un_trait(5).png" alt="trait"/>
-            <h4>Mouvement final</h4>
+            <div class="categorie"><h4>Mouvement final</h4>
+            <div id="underline_un" class="underline"></div>
+            </div>
             <img class="trait_six" src="menu_un_trait(6).png" alt="trait"/>
             </div>
             <ul>
@@ -52,7 +62,11 @@
                 <li>Tarte au citron meringuée destructurée</li>
             </ul>
             
-            <i class="fas fa-music"> <span id="fontsdevon">La note enchantée</span></i>
+            <div class="note_bas">
+            <p>
+            <i class="fas fa-music"></i>
+            </p>
+            <p id="fontsdevon">La note enchantée</p></div>
         </div>
     </section>
     

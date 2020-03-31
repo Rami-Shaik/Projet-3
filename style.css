@@ -359,6 +359,7 @@ header
 .zoom:hover
 {
     transform: scale(1.15);
+    opacity: 0.5;
 }
 
 /* SECTION */
@@ -445,6 +446,12 @@ footer h2:hover
 
 /* MENU UN */
 
+header a
+{
+    text-decoration: none;
+    color: rgb(253, 203, 70);
+}
+
 header h1
 {
     margin-top: auto;
@@ -475,6 +482,30 @@ header h1
 {
     margin-top: 3%;
     font-size: 3.5em;
+    width: 60px;
+}
+
+.note
+{
+    text-align: center;
+}
+
+.note_bas
+{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 50px;
+}
+
+.note_bas p:nth-child(2)
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2.5em;
+    margin-left: 2%;
+    color: rgb(60, 18, 24);
 }
 
 .menu_carte h3
@@ -488,10 +519,10 @@ header h1
 .trait
 {
     display: flex;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     margin-top: 5%;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu_carte h4
@@ -502,6 +533,7 @@ header h1
     color: rgb(61, 19, 25);
     font-family: 'flow_extbold', arial, serif;
 }
+
 
 .menu_carte ul
 {
@@ -544,21 +576,29 @@ header h1
 {
     background: linear-gradient(to right, rgb(240, 74, 94), rgb(248, 161, 131));
     color:transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
 }
 
-.menu_carte h4
+.categorie
 {
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 1000ms;
+    display: inline-block;
 }
 
-.menu_carte h4:hover
+.underline
 {
-    transform: scaleX(1);
-    text-decoration: underline; 
+    height: 2px;
+    width: 0px;
+    transition: 1s;
+}
+
+.categorie:hover .underline
+{
+    width: 100%;
+}
+
+#underline_un
+{
+    background-color: rgb(60, 18, 24);
 }
 
 /* MENU DEUX */
@@ -598,6 +638,20 @@ header h1
     font-family: 'pt_serifregular', arial, serif;
 }
 
+#underline_deux_orange
+{
+    background-color: rgb(198, 116, 18);
+}
+
+#underline_deux_rose
+{
+    background-color: rgb(165, 103, 153);
+}
+
+#underline_deux_violet
+{
+    background-color: rgb(110, 76, 204);
+}
 
 /* MENU TROIS */
 
@@ -620,6 +674,21 @@ header h1
     background-color: rgb(237, 239, 239);
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#underline_trois_un
+{
+    background-color: rgb(2, 40, 221);
+}
+
+#underline_trois_deux
+{
+    background-color: rgb(6, 112, 243);
+}
+
+#underline_trois_trois
+{
+    background-color: rgb(34, 157, 249);
 }
 
 /* MENU QUATRE */
@@ -647,7 +716,25 @@ header h1
     color: black;
 }
 
+#underline_quatre
+{
+    background-color: rgb(178, 244, 120);
+}
+
 /* MEDIA QUERRIES */
+
+@media screen and (min-width:2143px)
+{
+    #bloc_restaurant
+    {
+        flex-wrap:nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }  
+}
 
 @media screen and (max-width: 1252px)
 {
