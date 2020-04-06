@@ -9,6 +9,15 @@ body
     flex-direction: column;
 }
 
+#bloc_restaurant
+{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 /* POLICE */ 
 
 @font-face 
@@ -129,7 +138,8 @@ body
     font-style: normal;
 }
 
-h1
+    /* HEADER */
+header h1
 {
     font-family: 'metropolisbold', 'Arial', serif;
     font-size: 3em;
@@ -140,122 +150,105 @@ aside, footer
     font-family: 'metropolisextra_light', 'arial', serif;
 }
 
-section:nth-child(1) h3
+    /* CARTE */
+section a
 {
-    font-family: 'flow_extbold', Arial, serif;
-    font-size: 2.5em;
+    text-decoration: none;
 }
 
+    /* CARTE UN */
 section i
 {
     font-size: 2.5em;
 }
 
-section:nth-child(1) h2, #carte_menu_un h3
+#menu_un h2
 {
     font-family: 'devonshireregular', Arial, serif;
     font-weight: normal;
     font-size: 2.5em;
 }
 
-section:nth-child(2) h2
+#menu_un h3
+{
+    font-family: 'flow_extbold', Arial, serif;
+    font-size: 2.5em;
+}
+
+    /* CARTE DEUX*/
+#menu_deux h2
 {
     font-family: 'croissant_oneregular', Arial, serif;
     font-weight: normal;
     font-size: 1.5em;
 }
 
-section:nth-child(2) h3
+#menu_deux h3
 {
     font-family: 'superclarendonregular';
     font-weight: normal;
     font-size: 2.5em;
 }
 
-section a
-{
-    text-decoration: none;
-}
-
-section:nth-child(3) h3, section:nth-child(4) h3
-{
-    font-family: 'rujis_handwriting_font_v.2.Md', Arial, serif;
-    font-size: 2.5em;
-    font-weight: normal;
-}
-
-section:nth-child(3) h2
+    /* CARTE TROIS */
+#menu_trois h2
 {
     font-family: 'dancing_scriptregular', Arial, serif;
     font-size: 2.5em;
     font-weight: normal;
 }
 
-section:nth-child(4) h2
+#menu_trois h3
+{
+    font-family: 'rujis_handwriting_font_v.2.Md', Arial, serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+    /* CARTE QUATRE */
+#menu_quatre h2
 {
     font-family: 'kaushan_scriptregular', Arial, serif;
     font-weight: normal;
     font-size: 2.5em;
 }
 
-#arabicfont
+#menu_quatre h3
 {
-    font-family: 'arabic-font-2013bold';
+    font-family: 'rujis_handwriting_font_v.2.Md', Arial, serif;
     font-size: 2.5em;
-    color: rgb(53, 53, 53);
+    font-weight: normal;
 }
 
-
+    /* MENU */
+.arabicfont
+{
+    font-family: 'arabic-font-2013bold';
+    font-size: 2.2em;
+    color: rgb(53, 53, 53);
+}    
 
 /* POLICE */
 
+
 /* COLOR */ 
 
-header, footer, footer a
+header, header a, footer, footer a
 {
     color: rgb(253, 203, 70);
     background-color: rgb(87, 156, 135);
+    text-decoration: none;
 }
 
-.restaurant, #carte_menu_un, .menu_carte
+.restaurant, .menu_carte
 {
     box-shadow: 0 0 10px rgb(160, 159, 159);
 }
 
-.restaurant:nth-child(1)
+#menu_un
 {
     background-color: rgb(252, 223, 219);
     color: rgb(60, 18, 24);
-}
-
-.restaurant:nth-child(2)
-{
-    background-color: rgb(255, 245, 254);
-}
-
-.restaurant:nth-child(2) h4
-{
-    color: rgb(199, 116, 18);
-}
-
-.restaurant:nth-child(3)
-{
-    background-color: rgb(249, 249 ,249);
-}
-
-.restaurant:nth-child(3) h4
-{
-    color: rgb(8, 135, 251);
-}
-
-.restaurant:nth-child(4)
-{
-    background-color: rgb(253, 255 ,253);
-}
-
-.restaurant:nth-child(4) h4
-{
-    color: rgb(114, 191, 86);
 }
 
 #menu_un h2, #menu_un h3
@@ -263,14 +256,29 @@ header, footer, footer a
     color: rgb(60, 18, 24);
 }
 
+#menu_deux
+{
+    background-color: rgb(255, 245, 254);
+}
+
 #menu_deux h3
 {
     color: rgb(199, 116, 18);
 }
 
+#menu_trois
+{
+    background-color: rgb(249, 249 ,249);
+}
+
 #menu_trois h3
 {
     color: rgb(8, 135, 251);
+}
+
+#menu_quatre
+{
+    background-color: rgb(253, 255 ,253);
 }
 
 #menu_quatre h3
@@ -279,6 +287,7 @@ header, footer, footer a
 }
 
 /* COLOR */
+
 
 /* HEADER */
 
@@ -289,16 +298,8 @@ header
 
 /* HEADER */
 
-/* SECTION */
 
-#bloc_restaurant
-{
-    display: flex;
-    margin: auto;
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/* SECTION */
 
 .restaurant
 {
@@ -308,16 +309,15 @@ header
     text-align: center;
 }
 
-.middle
-{
-    margin-top: 50%;
-}
-
 .restaurant i
 {
     margin-top: 40%;
 }
 
+.middle
+{
+    margin-top: 50%;
+}
 
 #menu_un i
 {
@@ -364,20 +364,16 @@ header
 
 /* SECTION */
 
+
 /* ASIDE */
 
 aside h4
 {
-    text-align: center;
     font-size: 2em;
     color: rgb(253, 203, 70);
-    /*width: 15%;*/
-    margin-left: auto;
-    margin-right: auto;
     font-weight: normal;
-    /*background-color: rgb(87, 156, 135);
-    border-radius: 10px;
-    padding: 5px 10px;*/
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #prochainement
@@ -387,6 +383,9 @@ aside h4
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
 }
 
 aside
@@ -394,15 +393,62 @@ aside
     padding-bottom: 100px;
 }
 
+#suspension
+{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 15px;
+}
+
+#bouton_un, #bouton_deux, #bouton_trois
+{
+    background-color: rgb(253, 203, 70);
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+    border-radius: 50%;
+    display: flex;
+    animation: bouton 2000ms ease-in-out both alternate infinite;
+    transform-origin: bottom;
+}
+
+#bouton_un
+{
+    animation-delay: 0.5s;
+}
+
+#bouton_deux
+{
+    animation-delay: 1s;
+}
+
+#bouton_trois
+{
+    animation-delay: 1.5s;
+}
+
+@keyframes bouton
+{
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
+    
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 /* ASIDE */
+
 
 /* FOOTER */
 
 footer
 {
     display: flex;
-    flex-direction: row;
     justify-content:space-between;
     position: fixed;
     bottom: 0px;
@@ -444,13 +490,8 @@ footer h2:hover
 
 /* FOOTER */
 
-/* MENU UN */
 
-header a
-{
-    text-decoration: none;
-    color: rgb(253, 203, 70);
-}
+/* MENU CARTE */
 
 header h1
 {
@@ -463,85 +504,70 @@ header h1
 .menu_section h2
 {
     text-align: center;
+    height: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .menu_carte
 {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    margin-bottom: 100px;
-}
-
-#menu_carte_un
-{
-    background-color: rgb(252, 223, 219);
-}
-
-.menu_carte i:nth-child(1)
-{
-    margin-top: 3%;
-    font-size: 3.5em;
-    width: 60px;
-}
-
-.note
-{
-    text-align: center;
-}
-
-.note_bas
-{
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-bottom: 50px;
-}
-
-.note_bas p:nth-child(2)
-{
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 2.5em;
-    margin-left: 2%;
-    color: rgb(60, 18, 24);
+    width: 80%;
+    margin-bottom: 150px;
 }
 
 .menu_carte h3
 {
-    font-size: 2.5em;
     margin-top: 0.5em;
-    font-weight: normal;
     color: rgb(61, 19, 25);
+    font-size: 2em;
+    text-align: center;
+}
+
+.menu_carte h3:nth-child(2)
+{
+    font-family: 'devonshireregular', Arial, serif; 
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+.titre_menu
+{
+    display: flex;
+    width: 90%;
+    margin-top: 10%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .trait
 {
-    display: flex;
-    width: 100%;
-    margin-top: 5%;
-    justify-content: center;
-    justify-content: space-around;
+    width: 30%;
 }
 
 .menu_carte h4
 {
-    font-size: 1.5em;
     margin-top: auto;
     margin-bottom: auto;
     color: rgb(61, 19, 25);
     font-family: 'flow_extbold', arial, serif;
 }
 
+.categorie
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2em;
+}
 
 .menu_carte ul
 {
     list-style: none;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    font-size: 1.2em;
+    width: 83%;
     font-family: 'flow_extbold', Arial, serif;
     padding-left: 0;
 }
@@ -550,38 +576,6 @@ header h1
 {
     margin: 10px 0px;
     color: rgb(61, 19, 25);
-}
-
-.menu_carte i:nth-child(9)
-{
-    color: rgb(61, 19, 25);
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#fontsdevon
-{
-    font-family: 'devonshireregular', Arial, serif;
-    font-weight: normal;
-}
-
-.menu_carte h4, .menu_carte h3, .menu_carte i
-{
-    text-align: center;
-    width: 100%;
-}
-
-
-#menu_carte_un i
-{
-    background: linear-gradient(to right, rgb(240, 74, 94), rgb(248, 161, 131));
-    color:transparent;
-    -webkit-background-clip: text; 
-}
-
-.categorie
-{
-    display: inline-block;
 }
 
 .underline
@@ -601,21 +595,81 @@ header h1
     background-color: rgb(60, 18, 24);
 }
 
-/* MENU DEUX */
+.prix
+{
+    font-weight: bold;
+}
 
+    /* CARTE UN */
+#menu_carte_un
+{
+    background-color: rgb(252, 223, 219);
+}
+
+.note
+{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#note_un
+{
+    font-size: 4em;
+    width: 65px;
+    margin-top: 3%;
+}
+
+.note_bas
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-size: 0.9em;
+}
+
+.note_bas p:nth-child(1)
+{
+    font-size: 1.5em;
+}
+
+.note_bas p:nth-child(2)
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2.5em;
+    margin-left: 2%;
+    color: rgb(60, 18, 24);
+}
+
+#fontsdevon
+{
+    font-family: 'devonshireregular', Arial, serif;
+    font-weight: normal;
+}
+
+#menu_carte_un i
+{
+    background: linear-gradient(to right, rgb(240, 74, 94), rgb(248, 161, 131));
+    color:transparent;
+    -webkit-background-clip: text; 
+}
+
+    /* CARTE DEUX */
 #croissant_oneregular
 {
     font-family: 'croissant_oneregular', Arial, serif;
     background: linear-gradient(to right, rgb(216, 133, 46), rgb(144, 91, 253));
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 
+    font-size: 2em;
 }
 
 #menu_carte_deux
 {
     background-color: rgb(255, 245, 254);
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 #menu_carte_deux .orange
@@ -653,14 +707,15 @@ header h1
     background-color: rgb(110, 76, 204);
 }
 
-/* MENU TROIS */
-
+    /* CARTE TROIS */
 #menu_carte_trois h3
 {
     font-family: 'dancing_scriptregular', Arial, serif;
     background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
     color: transparent;
     -webkit-background-clip: text;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 #menu_carte_trois h4, #menu_carte_trois li
@@ -691,8 +746,7 @@ header h1
     background-color: rgb(34, 157, 249);
 }
 
-/* MENU QUATRE */
-
+    /* CARTE QUATRE */
 #menu_carte_quatre h3
 {
     font-family: 'kaushan_scriptregular', Arial, serif;
@@ -721,6 +775,39 @@ header h1
     background-color: rgb(178, 244, 120);
 }
 
+
+/* MENTIONS LEGALES */
+
+#mentions_legales
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(87, 156, 135);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#mentions_legales h1
+{
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(253, 203, 70);
+    text-decoration: underline;
+}
+
+#mentions_legales p, #mentions_legales h3
+{
+    text-align: center;
+}
+
+/* MENTIONS LEGALES */
+
+
 /* MEDIA QUERRIES */
 
 @media screen and (min-width:2143px)
@@ -736,6 +823,66 @@ header h1
     }  
 }
 
+@media screen and (min-width:2000px)
+{
+    header h1
+    {
+        font-size: 4em;
+    }
+    
+    .arabicfont
+    {
+        font-size: 3em;
+        padding-bottom: 30px;
+    }
+    
+    #croissant_oneregular
+    {
+        font-size: 3em;
+    }
+    
+    #menu_carte_trois h3, #menu_carte_quatre h3
+    {
+        font-size: 4em;
+    }
+    
+    #note_un
+    {
+        font-size: 7em;
+        width: auto;
+    }
+    
+    .menu_carte h3
+    {
+        font-size: 3em;
+    }
+    
+    .menu_carte h3:nth-child(2)
+    {
+        font-size: 4.5em;
+    }
+    
+    .menu_carte h4
+    {
+        font-size: 1.5em;
+    }
+    
+    .menu_carte li
+    {
+        font-size: 1.4em;
+    }
+    
+    .note_bas
+    {
+        font-size: 1.2em;
+    }
+    
+    #mentions_legales
+    {
+        font-size: 1.6em;
+    }
+}
+
 @media screen and (max-width: 1252px)
 {
     #bloc_restaurant
@@ -744,79 +891,19 @@ header h1
     }
 }
 
-@media screen and (max-width:1134px)
+@media screen and (min-width:1024px)
 {
-    #menu_carte_deux h4
+    .categorie
+    {
+        font-size: 1.5em;
+    }
+    
+    .menu_carte ul
     {
         font-size: 1.2em;
-        width: 100%;
-    }
-    
-    .trait:nth-child(2), .trait:nth-child(4), .trait:nth-child(6) 
-    {
-        width: 100%;
-        font-size: 0.8em;
+        width: 80%
     }
 }
-
-@media screen and (max-width: 1000px)
-{
-    .restaurant
-    {
-        width: 350px;
-        height: 450px;
-    }
-}
-
-@media screen and (max-width:996px)
-{
-    #menu_carte_quatre .trait
-    {
-        flex-direction: column;
-        width: 70%;
-    }
-}
-
-@media screen and (max-width:906px)
-{
-    #menu_carte_trois .trait
-    {
-        flex-direction: column;
-        width: 70%;
-    }
-}
-@media screen and (max-width:884px)
-{
-    .trait
-    {
-        font-size: .7em;
-    }
-}
-
-@media screen and (max-width:878px)
-{
-    .trait:nth-child(2), .trait:nth-child(4), .trait:nth-child(6)
-    {
-        flex-direction: column;
-        width: 70%;
-    }
-}
-
-
-@media screen and (max-width:875px)
-{
-    .restaurant
-    {
-        width: 300px;
-        height: 400px;
-    }
-    
-    #menu_trois, #menu_un, #menu_deux, #menu_quatre
-    {
-        font-size: 0.9em;
-    }
-}
-
 
 @media screen and (min-width:769px)
 {
@@ -838,49 +925,79 @@ header h1
         width: 95%; 
     }
     
-    .menu_carte ul
-    {
-        text-align: center;
-        width: 100%
-    }
-    
-    #arabicfont
+    .menu_carte h3:nth-child(2)
     {
         font-size: 2em;
     }
     
-    #menu_carte_un h3
-    {
-        font-size: 2em;
-    }
-    
-    .menu_carte h4
+    #croissant_oneregular
     {
         font-size: 1.8em;
     }
     
-    .trait
+    #menu_carte_trois h3
+    {
+        font-size: 2.2em;
+    }
+
+    section:nth-child(2) h3
+    {
+        font-size: 2.2em;
+    }
+    
+    #note_un
+    {
+        font-size: 3.5em;
+    }
+    
+    .menu_carte ul
+    {
+        text-align: center;
+        width: 95%;
+    }
+    
+    .titre_menu
     {
         flex-direction: column;
     }
     
-    #menu_carte_deux h4
+    .trait
     {
-        font-size: 1.3em
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    #menu_carte_deux h3
+    #menu_carte_un li
     {
-        font-size: 2.4em
+        margin-left: 5%;
+        margin-right: 5%;
     }
-}
+    
+    .underline
+    {
+    height: 2px;
+    width: 0px;
+    transition: 1s;
+    }
 
-@media screen and (max-width:545px)
-{
-    #menu_carte_deux h3
+.categorie:hover .underline
+    
     {
-        font-size: 2em;
+    width: 100%;
     }
+    
+    .categorie
+    {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #menu_carte_un h4
+    {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width:425px)
@@ -900,42 +1017,39 @@ header h1
         font-size: 0.9em;
     }
     
-    #menu_carte_deux h3
-    {
-        font-size: 1.8em;
-    }
-    
-    #menu_carte_deux li
-    {
-        font-size: 0.8em
-    }
-    
     #menu_carte_deux
     {
         padding-top: 20px;
     }
     
-    #menu_carte_trois h4
+    #menu_carte_un .note_bas
     {
-        font-size: 1.5em;
-    }
-    
-    #menu_carte_quatre h3
-    {
-        font-size: 2.2em;
-    }
-    
-    #menu_carte_quatre h4
-    {
-        font-size: 1.5em;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
 @media screen and (max-width:375px)
 {
-    #menu_un, #menu_deux, #menu_trois, #menu_quatre
+    header h1
+    {
+        font-size: 2.5em;
+    }
+    
+    .restaurant
     {
         font-size: 0.8em;
+        height: 350px;
+    }
+    
+    #menu_un i, .middle 
+    {
+        margin-top: 40%;
+    }
+    
+    #menu_un h3
+    {
+        margin-top: -0.5em; 
     }
     
     aside h4
@@ -953,19 +1067,28 @@ header h1
         font-size: 0.7em;
     }
     
-    #menu_carte_un h3
-    {
-        font-size: 1.5em;
-    }
-    
     #menu_carte_deux h3
     {
         font-size: 1.5em;
     }
     
-    #menu_carte_trois h3
+    #menu_carte_trois h3, #menu_carte_quatre h3
     {
-        font-size: 2.1em;
+        font-size: 1.9em;
     }
+    
+    .menu_carte ul
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    
+    .arabicfont
+    {
+        font-size: 1.7em;
+        text-align:center;
+        height: 100%;
+    }
+    
 }
-
