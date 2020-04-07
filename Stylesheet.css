@@ -228,9 +228,6 @@ section i
     color: rgb(53, 53, 53);
 }    
 
-/* POLICE */
-
-
 /* COLOR */ 
 
 header, header a, footer, footer a
@@ -286,18 +283,12 @@ header, header a, footer, footer a
     color: rgb(114, 191, 86);
 }
 
-/* COLOR */
-
-
 /* HEADER */
 
 header
 {
     text-align: center;
 }
-
-/* HEADER */
-
 
 /* SECTION */
 
@@ -317,6 +308,19 @@ header
 .middle
 {
     margin-top: 50%;
+}
+
+.zoom
+{
+    height: 100%;
+}
+
+.lien_carte
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 #menu_un i
@@ -361,9 +365,6 @@ header
     transform: scale(1.15);
     opacity: 0.5;
 }
-
-/* SECTION */
-
 
 /* ASIDE */
 
@@ -441,9 +442,6 @@ aside
     }
 }
 
-/* ASIDE */
-
-
 /* FOOTER */
 
 footer
@@ -486,10 +484,6 @@ footer h2:hover
     90% {transform:translate(1px, 2px) rotate(0deg);}
     100% {transform:translate(1px, -2px) rotate(-1deg);}
 }
-
-
-/* FOOTER */
-
 
 /* MENU CARTE */
 
@@ -805,19 +799,16 @@ header h1
     text-align: center;
 }
 
-/* MENTIONS LEGALES */
-
-
 /* MEDIA QUERRIES */
 
 @media screen and (min-width:2143px)
 {
     #bloc_restaurant
     {
-        flex-wrap:nowrap;
+        flex-wrap:wrap;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 50%;
         margin-top: 5%;
         margin-bottom: 5%;
     }  
@@ -880,14 +871,6 @@ header h1
     #mentions_legales
     {
         font-size: 1.6em;
-    }
-}
-
-@media screen and (max-width: 1252px)
-{
-    #bloc_restaurant
-    {
-        width: 100%;
     }
 }
 
