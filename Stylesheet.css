@@ -712,7 +712,7 @@ header h1
     -webkit-background-clip: text;
     font-size: 2.5em;
     font-weight: bold;
-    width: 296px;
+    width: 350px;
     margin: auto;
 }
 
@@ -976,6 +976,15 @@ header h1
     
 }
 
+@media screen and (max-width:475px)
+{
+    #croissant_oneregular
+    {
+        font-size: 1.5em;
+        width: 95%;
+    }
+}
+
 @media screen and (max-width:425px)
 {
     aside h4
@@ -1050,7 +1059,8 @@ header h1
     
     #menu_carte_trois h3, #menu_carte_quatre h3
     {
-        font-size: 1.9em;
+        font-size: 1.8em;
+        width: 100%;
     }
     
     .menu_carte ul
