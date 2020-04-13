@@ -13,7 +13,7 @@ body
 {
     display: flex;
     margin: auto;
-    width: 80%;
+    max-width: 1200px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -657,6 +657,8 @@ header h1
     color: transparent;
     -webkit-background-clip: text;
     font-size: 2em;
+    width: 368px;
+    margin: auto;
 }
 
 #menu_carte_deux
@@ -710,6 +712,8 @@ header h1
     -webkit-background-clip: text;
     font-size: 2.5em;
     font-weight: bold;
+    width: 296px;
+    margin: auto;
 }
 
 #menu_carte_trois h4, #menu_carte_trois li
@@ -747,7 +751,9 @@ header h1
     background: linear-gradient(to right, rgb(66, 151, 60), rgb(191, 255, 126));
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 
+    font-size:2.5em;
+    width: 300px;
+    margin: auto;
 }
 
 #menu_carte_quatre
@@ -800,19 +806,6 @@ header h1
 }
 
 /* MEDIA QUERRIES */
-
-@media screen and (min-width:2143px)
-{
-    #bloc_restaurant
-    {
-        flex-wrap:wrap;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }  
-}
 
 @media screen and (min-width:2000px)
 {
