@@ -584,7 +584,7 @@ header h1
     width: 100%;
 }
 
-#underline_un
+#menu_section_un .underline
 {
     background-color: rgb(60, 18, 24);
 }
@@ -770,7 +770,7 @@ header h1
     color: black;
 }
 
-#underline_quatre
+#menu_section_quatre .underline
 {
     background-color: rgb(178, 244, 120);
 }
